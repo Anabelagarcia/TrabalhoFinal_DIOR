@@ -19,6 +19,7 @@ useEffect( ()=>{
     const data = await response.json();
     setListProduct(data);
     steListcomplete(data);
+    }catch{
       setErrorFetch(true);
     }
   }
